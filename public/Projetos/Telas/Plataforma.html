@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/html">
+
+<head>
+    <meta charset="UTF-8"/>
+
+    <link rel="stylesheet" href="../_css/bootstrap.min.css"/>
+    <script language="JavaScript" src="../_Js/bootstrap.min.js"></script>
+    <script language="JavaScript" src="../_Js/validar_form.js"></script>
+    <title>Plataforma de Negociação-Sistema interno!</title>
+    <link rel="shortcut Icon" href="../_Img/ImgIcon.png" type="imagem/x-png"/>
+
+</head>
+<body>
+
+
+<nav class="navbar navbar-inverse" role="navigation">
+    <div class="container">
+        <H1 class="navbar-text">Plataforma de Negociação </H1>
+    </div>
+</nav>
+<div class="container-form">
+<br><br>
+    <form  role="form" method="post" name="dados" action="../DAO/dados_Plataforma.php" onSubmit=return validarplataforma()>
+        <div class="form-group">
+                    <label>Código da Mercadoria</label>
+                    <input type="text" class="form-control" name="CodMercadoria" id="CodMercadoria"  method="post" required CodMercadoria=CodMercadoria placeholder="Entre com o codigo da mercadoria!">
+
+
+                        <label >Tipo de Mercadoria</label>
+                        <input type="text" class="form-control" name="TipoMercadoria" id="TipoMercadoria"  method="post" required TipoMercadoria=TipoMercadoria placeholder="Entre com o tipo de mercadoria!">
+
+                            <label >Nome da Mercadoria</label>
+                            <input type="text" class="form-control" name="NomeMercadoria" id="NomeMercadoria" required NomeMercadoria=NomeMercadoria placeholder="Entre com o nome da mercadoria!">
+
+   <br>
+    <label >Quantidade</label>
+                                <input type="number" class="form-control-number" id="QtdMercadoria" required QtdMercadoria=QtdMercadoria >
+
+                                    <label >Preço</label>
+                                   <label>R$</label> <input type="Text" class="form-control-monetario" id="PrecoMercadoria" required PrecoMercadoria=PrecoMercadoria  length="15" onkeypress="return formatar_moeda(this,'.',',',event)">
+
+    <br><br>
+                                <label >Tipo de Negócio</label>
+
+                                    <select name="select" id="seletorTP">
+                                        <option value="1"> Compra</option>
+                                        <option value="2"> Venda</option>
+
+                                    </select>
+
+                                    <label >Tipo de Pagamentos</label>
+                    <select name="select">
+                                            <option value="1">Boleto</option>
+                                            <option value="2">Cartão</option>
+
+                                        </select>
+                                            <br>
+                                <br>
+
+                           <div class="checkbox">
+                    <label>
+                        <input type="checkbox"> Declaro que os dados informados acima são veridicos e assumo total responsabilidade!
+                    </label>
+
+                </div>
+                <button type="submit" onclick="ValidarPlataforma();" class="btn btn-default">Submit</button>
+<input name="Reset" type="reset" class="btn btn-default" value="Redefinir">
+
+                                        <br><br>
+            </div>
+            </form>
+    </div>
+
+</body>
+</html>

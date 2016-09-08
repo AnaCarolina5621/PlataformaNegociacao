@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/html">
+
+<head>
+    <meta charset="UTF-8"/>
+    <link rel="stylesheet" href="/Projetos/_css/bootstrap.min.css"/>
+    <script language="JavaScript" src="_Js/bootstrap.min.js"></script>
+    <script language="JavaScript" src="_Js/validar_form.js"></script>
+    <title>Plataforma de Negociação- Login</title>
+    <link rel="shortcut icon" href="_Img/imgIcon.png" type="imagem/x-png"/>
+</head>
+<body>
+<nav class="navbar navbar-inverse" role="navigation">
+    <div class="container">
+        <H1 class="navbar-text">Plataforma de Negociação</H1>
+    </div>
+</nav>
+<div class="container-form">
+<br>
+    <form role="form"  name="dados" id="dados"  method='post' action='../DadosLogin.php' >
+        <div class="form-group">
+            <label>Login:</label>
+            <input type="text" class="form-control" name="login" id="login" required login= login placeholder="Entre com seu usuário">
+        </div>
+                <label >Senha:</label>
+                <input type="password" class="form-control" name="senha" id="senha" required senha=senha   placeholder="Entre com sua senha!">
+
+ <div>
+<button type="submit" class="btn btn-default" name="postar"  onclick="../DadosLogin.php" >Login</button>
+    </div>
+            <br>
+            <hr>
+            <div>
+                <pred>Ainda não é cadastrado?</pred>
+<button type="submit" class="btn btn-default">Cadastre-se aqui!</button>
+
+    <br>    <br>
+    </div>
+
+</form>
+</div>
+
+
+</body>
+</html>
