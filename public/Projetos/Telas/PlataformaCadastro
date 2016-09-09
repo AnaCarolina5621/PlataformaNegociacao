@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/html">
+
+<head>
+    <meta charset="UTF-8"/>
+
+   <link rel="stylesheet" type="text/css" media="screen" href="../../stylesheets/stylesheet.css">
+    <script language="JavaScript" src="../../../bootstrap.min.js"></script>
+   <title>Plataforma de Negociação-Sistema interno!</title>
+    <link rel="shortcut Icon" href="../_Img/ImgIcon.png" type="imagem/x-png"/>
+
+</head>
+<body>
+
+
+<nav class="navbar navbar-inverse" role="navigation">
+    <div class="container">
+        <H1 class="navbar-text">Plataforma de Negociação </H1>
+    </div>
+</nav>
+<div class="container-form">
+<br><br>
+    <form  role="form" method="post" name="dados"  onSubmit=return validarplataforma()>
+        <div class="form-group">
+                    <label>Nome</label>
+                    <input type="text" class="form-control" name="Nome" id="Nome"  method="post" required CodMercadoria=CodMercadoria placeholder="Nome Completo">
+
+
+                        <label > Email:</label>
+                        <input type="text" class="form-control" name="" id="email"  method="post" required email=email placeholder="Email: ana@servidor.com">
+
+                            <label >CPF</label>
+                            <input type="text" class="form-control" name="CPF" id="CPF" required CPF=CPF placeholder="###.###.###-##">
+
+   <br>
+    <label >Telefone</label>
+                                <input type="text" class="form-control-number" id="telefone" required telefone=telefone placeholder="(##)#####-#### ">
+
+                                    <label >Usuário</label>
+                  <input type="Text" class="form-control" id="Usuario" required usuario=usuario>  
+  
+                                <label >Senha</label>
+
+                                     <input type="password" class="form-control" id="senha" required senha=senha>  
+  <br><br>
+                           <div class="checkbox">
+                    <label>
+                        <input type="checkbox"> Declaro que os dados informados acima são veridicos e assumo total responsabilidade!
+                    </label>
+
+                </div>
+                <button type="submit" onclick="ValidarPlataforma();" class="btn btn-default">Submit</button>
+<input name="Reset" type="reset" class="btn btn-default" value="Redefinir">
+
+                                        <br><br>
+            </div>
+            </form>
+    </div>
+
+</body>
+</html>
